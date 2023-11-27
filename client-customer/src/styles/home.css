@@ -1,0 +1,40 @@
+/* home.css */
+.inline img {
+    border-radius: 15px;
+}
+.inline {
+    text-align: center; /* Center the content inside the inline div */
+  }
+  
+.home-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #DBEAE9; /* Background color for the entire website */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.slider-home {
+    margin-top: -5px;
+    width: 100%; /* Ensure the slider takes the full width */
+}
+
+.home-align-center {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Set a maximum width for better readability */
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Add any other styling as needed for new products and hot products sections */
+.home-align-center > div {
+    width: 400px; /* Set the width of each product */
+    margin: 10px; /* Adjust the margin as needed */
+}
+.cap-text-center {
+    margin-left: -40%;    
+    margin-top: 5px; /* Adjust the margin as needed */
+  }

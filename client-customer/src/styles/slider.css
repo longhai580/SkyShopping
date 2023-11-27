@@ -1,0 +1,41 @@
+/* slider.css */
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+    width: 80%; /* Đặt chiều rộng của slider */
+    margin: 0 auto; /* Đưa slider vào giữa trang */
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slick-slide {
+    float: left;
+    min-height: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px; 
+}

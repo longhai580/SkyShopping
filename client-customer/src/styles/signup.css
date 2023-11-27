@@ -1,0 +1,97 @@
+.align-center-signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+
+}
+.signup-wrapper{
+    width: 420px;
+    background-color:#6FC4C4;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-top: 3%;
+
+}
+.signup-wrapper h2{
+    font-size: 36px;
+    text-align: center;
+
+}
+.signup-wrapper .input-box-signup{
+    position: relative;
+    width:100% ;
+    height: 50px;
+    margin: 30px 0 ;
+}
+.input-box-signup input{
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 40px;
+    padding: 20px 45px 20px 20px;
+}
+.input-box-signup input::placeholder{
+    color: #fff;
+
+}
+.input-box-signup .icon-signup{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%) ;
+    font-size: 20px;
+}
+.signup-wrapper .remember-forgot-signup{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0px 15px;
+
+}
+.remember-forgot-signup label input{
+    accent-color: #fff;
+    margin-right: 3px;
+
+}
+.remember-forgot-signup a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forgot-signup a:hover{
+    text-decoration: underline;
+}
+.signup-wrapper .btn-signup-submit{
+    width: 100%;
+    height: 45px;
+    background:#fff;
+    border: none;
+    outline: none;
+    border-radius: 40px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600px;
+}
+.btn-signup-submit:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
+}
+.signup-wrapper .register-link-signup{
+    font-size: 14.5px;
+    text-align: center;
+    margin:20px 0 15px ;
+}
+.register-link-signup p link{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link-signup p link:hover{
+    text-decoration: underline;
+}
