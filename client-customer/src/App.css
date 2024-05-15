@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* styles.css */
 .body-customer {
   width: 100%;
   height: 100vh;
   margin: 0px auto;
-  background-color: #DBEAE9;
+  background-color: #ffffff !important;
   font-family: 'Roboto', sans-serif;
 
 }
@@ -15,7 +16,7 @@
   margin: 0px auto;
 }
 div.inline {
-  display: inline-block;
+  /* display: inline-block; */
 }
 figure.caption-right {
   display: flex;
@@ -32,7 +33,7 @@ figure.caption-right {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0px 20px 20px 20px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .text-center {
   text-align: center;
@@ -43,7 +44,7 @@ span.link {
 }
 /* menu.css */
 div.border-bottom {
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   padding: 10px 0px 10px 0px;
 }
 div.float-left {
@@ -55,14 +56,18 @@ div.float-right {
 div.float-clear {
   clear: both;
 }
-ul.menu {
+/* ul.menu {
   margin: 0px;
   padding: 0px;
+  color: white !important;
+
 }
 li.menu {
   display: inline;
   margin-right: 20px;
-}
+  color: white !important;
+
+} */
 form.search {
   margin: 0px;
 }
@@ -90,4 +95,7 @@ tr:not(:first-child):nth-child(odd).datatable {
 tr:not(:first-child):hover.datatable {
   background-color: #dcfcfc;
   cursor: pointer;
+}
+a{
+  text-decoration: none ;
 }

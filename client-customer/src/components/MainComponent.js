@@ -13,6 +13,8 @@ import Mycart from './MycartComponent';
 import Myorders from './MyordersComponent';
 import Gmap from './GmapComponent';
 import TawkMessenger from './TawkMessengerComponent';
+import Header from './HeaderComponent';
+import Footer from './FooterComponent';
 
 
 class Main extends Component {
@@ -20,12 +22,14 @@ class Main extends Component {
     return (
       <div className="body-customer">
         <Inform />
-        <Menu />
+        {/* <Menu /> */}
         <TawkMessenger />
 
    
         <Routes>
           <Route path='/' element={<Navigate replace to='/home' />} />
+          <Route path='/gmap' element={<Header />} />
+
           <Route path='/home' element={<Home />} />
           <Route path='/product/category/:cid' element={<Product />} />
           <Route path='/product/search/:keyword' element={<Product />} />
@@ -37,7 +41,9 @@ class Main extends Component {
           <Route path='/mycart' element={<Mycart />} />
           <Route path='/myorders' element={<Myorders />} />
           <Route path='/gmap' element={<Gmap />} />
+
         </Routes>
+        <Footer />
       </div>
     );
   }

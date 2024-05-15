@@ -3,10 +3,9 @@ import React, { Component } from 'react';
 import MyContext from '../contexts/MyContext';
 import withRouter from '../utils/withRouter';
 import { Link } from 'react-router-dom';
-import '../styles/login.css'
+import '../styles/Login.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { faLock } from '@fortawesome/free-solid-svg-icons';
+import { faGooglePlusG, faFacebookF } from '@fortawesome/free-brands-svg-icons';
 
 class Login extends Component {
   static contextType = MyContext; // using this.context to access global state
@@ -17,10 +16,72 @@ class Login extends Component {
       txtPassword: '123'
     };
   }
+  
   render() {
+    const style = {
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      width: 400,
+      bgcolor: 'background.paper',
+      border: '2px solid #000',
+      boxShadow: 24,
+      p: 4,
+    };
+    
+  
     return (
       <div className="align-center-login">
-        <div className='login-wrapper'>
+    <div className="login-background"> 
+            <div className='login-container'>
+                <div className='login-content row'>
+                    <div className="col-12 text-login">ĐĂNG NHẬP</div>
+                    <div className="col-12 form-group login-input">
+                        <label>Tên tài khoản:</label>
+                        <input type="text" className="form-control"
+                        placeholder='Enter your username'
+                        value={this.state.txtUsername} onChange={(e) => { this.setState({ txtUsername: e.target.value }) }}
+                         />
+                    </div>
+                    <div className="col-12 form-group login-input">
+                        <label>Mật khẩu:</label>
+                        <div className="custom-input-password">
+                            <input  className="form-control" 
+                            placeholder='Enter your password' 
+                            value={this.state.txtPassword} onChange={(e) => { this.setState({ txtPassword: e.target.value }) }}
+                            />
+                            {/* <span
+                            onClick={() =>{this.handleShowHidePassword()}}
+                            >                              
+                             <i className={this.state.isShowPassword ? 'far fa-eye' : 'far fa-eye-slash' }></i>
+                            </span> */}
+                        </div>
+                       
+                    </div>
+                    
+                    <div className='col-12'>
+                <button className="btn-login"
+                onClick={(e) => this.btnLoginClick(e)}
+                >Đăng nhập</button>
+                    </div>
+                    <div className='col-12'>
+                        <span className="forgot-password">Quên mật khẩu </span>
+                    </div>
+                    <div className='col-12 text-center'>
+                        <span className="text-other-login">Đăng nhập với:  </span>
+                    </div>
+                    <div className='col-12 social-login '>
+                    <FontAwesomeIcon icon={faGooglePlusG} className="google" />
+                    <FontAwesomeIcon icon={faFacebookF} className='facebook' />
+              </div>
+              <div className='col-12 register-link'>
+                <p>Bạn chưa có tài khoản?<Link to='/signup'>Đăng kí ngay</Link></p>
+              </div>
+                </div>
+            </div>
+        </div>
+        {/* <div className='login-wrapper'>
         <form>
         <h2 className="text-center-login">ĐĂNG NHẬP</h2>
           <div className='input-box'>
@@ -40,7 +101,7 @@ class Login extends Component {
             <p>Bạn chưa có tài khoản?<Link to='/signup'>Đăng kí ngay</Link></p>
           </div>
         </form>
-        </div>
+        </div> */}
       </div>
     );
   }

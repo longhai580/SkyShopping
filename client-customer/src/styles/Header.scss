@@ -1,0 +1,292 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+
+.header-container{
+    width: 100%;
+    background-color: #fff !important;
+    box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb !important;
+    color: #fff;
+    .header-body-parent{
+        padding: 0;
+    }
+    .container-fluid{
+        padding: 0;
+        height: 100%;
+    }
+    .logo-header-img{
+        position: absolute !important;
+        top: 0;
+        width: auto;
+        height: 100%;
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .header-body{
+        width: 100%;
+        padding: 0 !important;
+        .header-content{
+            display: flex;
+            flex-direction: column;
+            .header-content-top{
+                display: flex;
+                justify-content: space-between;
+                .header-content-item{
+                    .header-support{
+                        &:hover{
+                            cursor: pointer;
+                            color: #6ec4c4 !important;
+                            opacity: 0.7;
+                        }
+                        font-size: 18px;
+                        font-weight: 500;
+                        .icon-support{
+                            font-size: 18px;
+                            &:hover{
+                                cursor: pointer;
+                                color: #6ec4c4 !important;
+                                opacity: 0.7;
+                            }
+                        }
+                        .header-support-title{
+                            margin-left: 5px;
+                            color: black;
+                        }
+                    }
+                    .header-cart{
+                        margin-left: 15px !important;
+                        .icon-up{
+                            font-size: 18px;
+                            &:hover{
+                                color: #6ec4c4 !important;
+                                opacity: 0.7;
+                            }
+                        }
+                        .cart-title{
+                            font-size: 18px !important;
+                            font-weight: 500;
+                            margin-left: 5px;
+                            &:hover{
+                                color: #6ec4c4 !important;
+                                opacity: 0.7;
+    
+                            }
+                        }
+                        span{
+                            &:hover{
+                                color: #6ec4c4 !important;
+        
+                            }
+                        }
+                        .item-count{
+                            position: absolute;
+                            top: 2px;
+                            right: 215px;
+                            background-color: #6ec4c4;
+                            color: #fff;
+                            height: 20px !important;
+                            width: 20px !important;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 12px;
+                            font-weight: bold;
+    
+                        }
+                        
+                       
+                    }
+                    .header-login{
+                        margin-left: 15px !important;
+                        .dp-login-container{
+                            .dp-login-body{
+                                cursor: pointer;
+                                &:hover{
+                                    opacity: 0.7;
+                                    color: #6ec4c4 !important;
+                                }
+                                .dp-login-icon{
+                                    font-size: 18px;
+                                    color: black;
+
+        
+                                }
+                                .dp-login-title{
+                                    margin-left: 5px;
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                    color: black;
+
+                                }
+                            }
+                            .dp-login-child{
+                                .dp-login-item {
+                                    &:hover{
+                                        color: #6ec4c4 !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    align-items: center;
+                    li{
+                        text-decoration: none;
+                    }
+                    .header-content-item{
+                        .login-container{
+                            margin-left: 5px !important;
+                        }
+                    }
+                    
+                }
+            }
+            
+            .nav-link {
+                text-decoration: none;
+              }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            
+              
+        }
+        .header-search-container{
+            width: 400px;
+            margin-right: 40px;
+            .btn-search-item{
+                outline: #6ec4c4;
+                border-color: #6ec4c4 !important;
+                color: #757575;
+                &:hover{
+                    background-color: #6ec4c4 !important;
+                    outline: black ;
+                    color: #fff;
+                }
+            }
+            .header-search-body{
+                width: 400px;
+                input{
+                    width: 400px !important;
+
+                }
+
+            }
+        }
+        .header-item-group {
+
+        }
+        
+    }
+    // .header-body-parent-bottom{
+    //     padding: 0;
+    //     width: 100%;
+    //     .container-fluid{
+    //         padding: 10px 0 0 0 ;
+    //         height: 100%;
+    //         .nav-bar{
+    //             .menu{
+    //                 color: #fff !important;
+    //             }
+    //             .header-menu{
+    //                 padding: 10px 0px 0px 0px;
+    //                 background-color: #6FC4C4; // Màu cho menu
+    //                 padding: 0 !important;
+    //                 height: auto;
+    //                 margin-top: 20px;
+    //                 width: 100%;
+    //                 justify-content: center;
+    //                 align-items: center;
+    //                 text-align: center;
+    //                 color: #fff !important;
+    
+    //                 .menu-item{
+    //                     align-items: center;
+    //                     justify-content: center;
+    //                     text-align: center;
+    
+    //                     display: inline-block;
+    //                     margin: 0 auto;
+    //                     padding: 10px 0;
+    //                     color: #fff !important;
+    
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    
+
+}
+
+ 
+
+// Responsive
+// Mobile: width < 740px
+
+
+@media only screen and (max-width:46.1875em){
+   .container-fluid{
+  
+    width: 100%;
+    // height: 100vh;
+    padding: 0 10px;
+    padding: 10px 0 0 0 ;
+    height: 100%;
+    .navbar-toggler{
+        float: right;
+    }
+    .header-mobile{
+        .navbar-toggler{
+        }
+    }
+    .header-content{
+        .header-content-item{
+            display: flex;
+            flex-direction: row;
+            .header-support-title, .cart-title, .dp-login-title{
+                display: none;
+            }
+        }
+        .header-menu{
+            display: none !important;
+        }
+    }
+
+   }
+   .dp-login-container {
+    display: flex;
+    flex-direction: row;
+    .dp-login-body {
+      display: none;
+    }
+    .dp-login-child {
+      display: flex;
+      flex-direction: row;
+      position: static;
+      background: none;
+      border: none;
+      box-shadow: none;
+      .dp-login-item {
+        display: inline;
+        margin-left: 15px;
+        &:hover {
+          color: #6ec4c4 !important;
+        }
+      }
+    }
+  }
+}
+// Tablet : width >= 740px and width <1024px
+@media screen and (min-width: 46.25em) and (max-width:63.9375em){
+    
+}
+// Pc width >= 1024px
+@media only screen and (min-width:64em){
+
+}
+

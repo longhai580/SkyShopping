@@ -1,0 +1,100 @@
+.align-center-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .table-cart {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff5;
+    box-shadow: 0 0.4rem 0.8rem #0005;
+    border-radius: 0.8rem;
+    margin-top: 10%;
+  
+    table,
+    th,
+    td {
+      padding: 1rem;
+      overflow: hidden;
+      border-collapse: collapse;
+      border: 1px solid #0003;
+    }
+  
+    .datatable tbody {
+      box-shadow: 0 0.4rem 0.8rem #0005;
+    }
+  }
+  
+  .table {
+    background-color: #fffb;
+    border-radius: 0.6rem;
+    overflow: auto;
+    overflow: overlay;
+  
+    &-cart-datatable {
+      ::-webkit-scrollbar {
+        width: 0.5rem;
+        height: 0.5rem;
+      }
+  
+      ::-webkit-scrollbar-thumb {
+        border-radius: 0.5rem;
+        background-color: #0004;
+        visibility: hidden;
+      }
+  
+      &:hover::-webkit-scrollbar-thumb {
+        visibility: visible;
+      }
+    }
+  }
+  
+  .datatable {
+    th {
+      position: sticky;
+      top: 0;
+      left: 0;
+      background-color: #d5d1defe;
+      cursor: pointer;
+      text-transform: capitalize;
+  
+      span.icon-arrow {
+        display: inline-block;
+        width: 1.3rem;
+        height: 1.3rem;
+        border-radius: 50%;
+        border: 1.4px solid transparent;
+        text-align: center;
+        font-size: 1rem;
+        margin-left: 0.5rem;
+        transition: 0.2s ease-in-out;
+      }
+  
+      &:hover span.icon-arrow {
+        border: 1.4px solid #6FC4C4;
+      }
+  
+      &:hover {
+        color: #6FC4C4;
+
+        // color: #6c00bd;
+      }
+  
+      &.active span.icon-arrow {
+        background-color: #6c00bd;
+        color: #fff;
+      }
+  
+      &.asc span.icon-arrow {
+        transform: rotate(180deg);
+      }
+  
+      &.active,
+      td.active {
+        color: #6FC4C4;
+      }
+    }
+  }
+  

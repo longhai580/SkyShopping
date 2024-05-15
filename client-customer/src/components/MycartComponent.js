@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MyContext from '../contexts/MyContext';
 import CartUtil from '../utils/CartUtil';
 import axios from 'axios';
-import '../styles/cart.css';
+import '../styles/MyCart.scss';
 class Mycart extends Component {
   static contextType = MyContext; // using this.context to access global state
   render() {

@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { Component } from 'react';
 import { Navigate } from 'react-router-dom';
 import MyContext from '../contexts/MyContext';
-import '../styles/order.css'
+import '../styles/MyOrder.scss'
 class Myorders extends Component {
   static contextType = MyContext; // using this.context to access global state
   constructor(props) {

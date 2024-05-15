@@ -5,7 +5,7 @@ import withRouter from '../utils/withRouter';
 import { AiFillHome } from "react-icons/ai";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IoIosLaptop } from "react-icons/io";
-import { faTv} from '@fortawesome/free-solid-svg-icons';
+import { faTv, faMoon} from '@fortawesome/free-solid-svg-icons';
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { ImHeadphones } from "react-icons/im";
 import { IoWatchOutline } from "react-icons/io5";
@@ -14,8 +14,8 @@ import { SlScreenTablet } from "react-icons/sl";
 import { PiDesktopTower} from "react-icons/pi";
 import { TbDeviceMobileDollar } from "react-icons/tb";
 import { RiMegaphoneLine } from "react-icons/ri";
+import '../styles/Menu.scss';
 
-import '../styles/Menu.css'
 class Menu extends Component {
   constructor(props) {
     super(props);
@@ -70,13 +70,15 @@ class Menu extends Component {
     );
   });
     return (
-      <div className="menu-border-bottom">
+      <div className="col-12 d-flex justify-content-center menu-border-bottom">
         <div className="menu-float-left">
           <ul className="menu">
-            <li className="menu"><Link to='/'><AiFillHome/> Trang chủ</Link></li>
             {cates}
 
             <div style={{ display: "inline" }} class="form-switch">
+              {/* <span class="form-check-input" onChange={(e) => this.ckbChangeMode(e)} >
+              <FontAwesomeIcon icon={faMoon} />
+              </span> */}
         <input class="form-check-input" type="checkbox" onChange={(e) => this.ckbChangeMode(e)} />&nbsp; Light / Dark mode
       </div>
           </ul>

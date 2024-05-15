@@ -1,0 +1,81 @@
+// home.scss
+
+.new-inline {
+    display: inline-block;
+    height: 500px;
+    width: 400px !important;
+    text-align: center; // Center the content inside the inline div
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
+    margin: 30px 5px;
+    cursor: pointer;
+
+    &:hover{
+        
+            transform: translateY(-0.5rem);
+            box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
+          
+    }
+    .home-product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .home-product-new{
+            padding-top: 10px;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            justify-content: center;
+        }
+        .description-product-new{
+            padding-top: 40px;
+
+        }
+       
+    }
+    .btn-see-more{
+        margin-top: 40px !important;
+        .btn-see-more-detail{
+            width: 90%;
+        }
+    }
+    img {
+      border-radius: 15px;
+    }
+  }
+  
+  .home-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5; // Background color for the entire website
+    padding: 20px; // Add padding for better spacing
+  
+    .slider-home {
+      margin-top: 100px !important; // Adjust margin as needed
+      width: 100%; // Ensure the slider takes the full width
+      max-width: 1400px; // Set max width to match the slider container
+      margin: 0 auto;
+      padding: 10px 0; // Adjust padding as needed
+    }
+  
+    .home-align-center {
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1400px; // Set a maximum width for better readability
+      margin: 30px auto;
+      text-align: center;
+  
+  
+    }
+  
+    .cap-text-center {
+      margin-left: -40%;
+      margin-top: 5px; // Adjust the margin as needed
+    }
+  }
+  

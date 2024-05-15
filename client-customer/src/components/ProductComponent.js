@@ -6,7 +6,7 @@ import withRouter from '../utils/withRouter';
 import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import '../styles/product.css'
+import '../styles/Product.scss';
 class Product extends Component {
   constructor(props) {
     super(props);

@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { Component } from 'react';
 import { Navigate } from 'react-router-dom';
 import MyContext from '../contexts/MyContext';
-import '../styles/profile.css'
+import '../styles/MyProfile.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
@@ -51,7 +51,7 @@ class Myprofile extends Component {
             <FontAwesomeIcon icon={faEnvelope} className='icon-profile' />
           </div>
           
-            <input  className='btn-profile-submit'type="submit" value="UPDATE" onClick={(e) => this.btnUpdateClick(e)} />
+            <input  className='btn-profile-submit'type="submit" value="CẬP NHẬT" onClick={(e) => this.btnUpdateClick(e)} />
           
         </form>
         </div>

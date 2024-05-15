@@ -1,0 +1,113 @@
+// menu.scss
+
+.menu-border-bottom {
+    /* border-bottom: 1px solid black; */
+    padding: 10px 0px 10px 0px;
+    background-color: #6FC4C4; // Màu cho menu
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb !important;
+    color: #fff;
+    
+    .menu-float-left {
+      align-items: center;
+      text-align: center;
+      justify-content: space-around;
+      display: flex;
+    }
+  
+    .float-right {
+      float: right;
+    }
+  
+    .float-clear {
+      clear: both;
+    }
+  
+    ul.menu {
+      margin: 0px;
+      padding: 0px;
+      color: white !important;
+
+    }
+  
+    li.menu {
+      display: inline;
+      margin-right: 20px;
+
+      color: white !important;
+    }
+  
+    form.search {
+      margin: 0px;
+    }
+  
+    input.keyword {
+      width: 200px;
+    }
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color:white;
+  
+    li {
+      display: inline-block !important;
+      margin-right: 20px; // Adjust the spacing between menu items
+      color:white;
+
+    }
+    
+    a {
+      text-decoration: none;
+      font-weight: 400;
+      color:white;
+      transition: color 0.3s ease; // Add a smooth transition effect
+  
+      &:hover {
+        color: #f34949; // Change the color on hover to your preferred color
+      }
+    }
+  
+    svg {
+      // Apply styles to the SVG element within the .menu class
+      width: 20px; // Set the width of the icon
+      height: 30px; // Set the height of the icon
+      margin-right: 5px; // Add margin to the right of the icon for spacing
+      vertical-align: middle; // Align the icon vertically in the middle with the text
+      fill: #fcfcfc; // Set the fill color of the icon
+      // Add any other styles you want to customize the icon
+      top: 10%;
+     &:hover {
+        color: #f34949; // Change the color on hover to your preferred color
+      }
+    }
+  }
+  @media only screen and (max-width: 46.1875em) {
+  //   .menu {
+  //   }
+  //   // .ul.menu {
+  //   //   flex-direction: column ;
+
+  //   // }
+  // }
+  
+  // Tablet : width >= 740px and width < 1024px
+  @media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    // .menu {
+    //   display: none !important;
+    // }
+  }
+  
+  // PC : width >= 1024px
+  @media only screen and (min-width: 64em) {
+    .menu {
+      display:none;
+      // display: flex !important; // Ensure menu is visible on larger screens
+    }
+  }
+}   
