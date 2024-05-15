@@ -7,11 +7,10 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Header.scss'
-import logo6 from '../img/logo6.png'
 import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { IoIosLaptop } from "react-icons/io";
-import { faTv, faMoon} from '@fortawesome/free-solid-svg-icons';
+import { faTv} from '@fortawesome/free-solid-svg-icons';
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { ImHeadphones } from "react-icons/im";
 import { IoWatchOutline } from "react-icons/io5";

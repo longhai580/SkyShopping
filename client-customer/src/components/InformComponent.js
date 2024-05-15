@@ -2,14 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import MyContext from '../contexts/MyContext';
 import withRouter from '../utils/withRouter';
-import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Inform.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faSearch} from '@fortawesome/free-solid-svg-icons';
-import {faTruck} from '@fortawesome/free-solid-svg-icons';
-import { faShop } from '@fortawesome/free-solid-svg-icons';
 import Header from './HeaderComponent';
 import Menu from './MenuComponent';
 
